@@ -378,11 +378,7 @@
           </div>
 
           <div class="sauce-item">
-            <img
-              src="img/Fries.png"
-              alt="Fries"
-              class="sauce-image"
-            />
+            <img src="img/Fries.png" alt="Fries" class="sauce-image" />
             <h4>Fries</h4>
             <p>Fries.</p>
             <p>Price: $2</p>
@@ -484,11 +480,23 @@
       </div>
     </section>
 
-    <!-- Cart -->
+    <!-- Cart Section -->
     <section id="cart" class="page">
       <h2>Shopping Cart</h2>
-      <ul id="cart-items"></ul>
-      <p>Total: $<span id="total">0</span></p>
+
+      <!-- Cart Items and Total -->
+      <div class="cart-container">
+        <div class="cart-items-container">
+          <ul id="cart-items"></ul>
+          <p>Total: $<span id="total">0</span></p>
+        </div>
+
+        <!-- Discount Section -->
+        <div class="discount-container">
+          <img src="img/Discount.jpg" alt="Discount" class="discount-image" />
+          <p>Use code <strong>PIZZA10</strong> for 50% off!</p>
+        </div>
+      </div>
     </section>
 
     <!-- Order -->
