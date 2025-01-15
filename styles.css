@@ -87,8 +87,8 @@ nav ul li a i {
 }
 
 /* Pizza Group Styles */
-.sauces-group,
-.juices-group,
+/* .sauces-group,
+.juices-group, */
 .pizza-group {
     display: grid;
     grid-template-columns: repeat(5, 1fr); 
@@ -97,8 +97,8 @@ nav ul li a i {
 }
 
 /* Pizza Item Styles */
-.sauce-item,
-.juice-item,
+/* .sauce-item,
+.juice-item, */
 .pizza-item {
     border: 1px solid #ddd;
     border-radius: 10px;
@@ -109,15 +109,15 @@ nav ul li a i {
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.sauce-item:hover,
-.juice-item:hover,
+/* .sauce-item:hover,
+.juice-item:hover, */
 .pizza-item:hover {
     transform: translateY(-5px);
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
 }
 
-.sauce-image,
-.juice-image,
+/* .sauce-image,
+.juice-image, */
 .pizza-image {
     width: 100%;
     height: 150px;
@@ -126,16 +126,16 @@ nav ul li a i {
     margin-bottom: 10px;
 }
 
-.sauce-item h4,
-.juice-item h4,
+/* .sauce-item h4,
+.juice-item h4, */
 .pizza-item h3 {
     font-size: 1.5rem;
     margin-bottom: 10px;
     color: #333;
 }
 
-.sauce-item p,
-.juice-item p,
+/* .sauce-item p,
+.juice-item p, */
 .pizza-item p {
     font-size: 1rem;
     color: #666;
@@ -158,8 +158,8 @@ nav ul li a i {
     font-size: 1rem;
 }
 
-.sauce-item button,
-.juice-item button,
+/* .sauce-item button,
+.juice-item button, */
 .pizza-item button {
     padding: 10px 20px;
     background-color: #ff7e5f;
@@ -171,8 +171,8 @@ nav ul li a i {
     transition: background-color 0.3s ease;
 }
 
-.sauce-item button:hover,
-.juice-item button:hover,
+/* .sauce-item button:hover,
+.juice-item button:hover, */
 .pizza-item button:hover {
     background-color: #feb47b;
 }
