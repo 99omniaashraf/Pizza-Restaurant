@@ -165,16 +165,16 @@ nav ul li a i {
 .sauces-group,
 .juices-group {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 20px;
-  margin-top: 40px;
+  grid-template-columns: repeat(3, 1fr); 
+  gap: 15px; 
+  margin-top: 30px;
 }
 
 .sauce-item,
 .juice-item {
   border: 1px solid #ddd;
   border-radius: 10px;
-  padding: 15px;
+  padding: 10px; 
   background-color: white;
   text-align: center;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -190,7 +190,7 @@ nav ul li a i {
 .sauce-image,
 .juice-image {
   width: 100%;
-  height: 150px;
+  height: 100px; 
   object-fit: cover;
   border-radius: 10px;
   margin-bottom: 10px;
@@ -198,27 +198,27 @@ nav ul li a i {
 
 .sauce-item h4,
 .juice-item h4 {
-  font-size: 1.2rem;
-  margin-bottom: 10px;
+  font-size: 1rem; 
+  margin-bottom: 8px;
   color: #333;
 }
 
 .sauce-item p,
 .juice-item p {
-  font-size: 1rem;
+  font-size: 0.9rem; 
   color: #666;
-  margin-bottom: 15px;
+  margin-bottom: 10px;
 }
 
 .sauce-item button,
 .juice-item button {
-  padding: 10px 20px;
+  padding: 8px 16px; 
   background-color: #ff7e5f;
   color: white;
   border: none;
   border-radius: 5px;
   cursor: pointer;
-  font-size: 1rem;
+  font-size: 0.9rem; 
   transition: background-color 0.3s ease;
 }
 
