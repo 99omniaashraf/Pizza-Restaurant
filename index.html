@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pizza Restaurant</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+  </head>
+  <body>
+    <header>
+      <h1>Pizza Restaurant</h1>
+      <nav>
+        <ul>
+          <li><a href="#menu">Menu</a></li>
+          <li>
+            <a href="#cart">
+              <i class="fas fa-shopping-cart"></i>
+              <span class="cart-count">0</span></a
+            >
+          </li>
+          <li><a href="#order">Order</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- Menu -->
+    <section id="menu" class="page">
+      <h2>Pizza Menu</h2>
+
+      <!-- Group 1-->
+      <div class="pizza-group">
+        <!-- Margherita Pizza -->
+        <div class="pizza-item">
+          <img
+            src="img/Margherita Pizza.jpg"
+            alt="Margherita Pizza"
+            class="pizza-image"
+          />
+          <h3>Margherita Pizza</h3>
+          <p>Tomato sauce, mozzarella cheese, fresh basil, and olive oil</p>
+          <label for="size-margherita">Choose Size:</label>
+          <select id="size-margherita">
+            <option value="10">Small - $10</option>
+            <option value="15">Medium - $15</option>
+            <option value="20">Large - $20</option>
+          </select>
+          <label for="extras-margherita">Choose Extras:</label>
+          <select id="extras-margherita">
+            <option value="2">Mushrooms - $2</option>
+            <option value="3">Pepperoni - $3</option>
+            <option value="1">Olives - $1</option>
+          </select>
+          <button
+            onclick="addToCart('Margherita Pizza', 'size-margherita', 'extras-margherita')"
+          >
+            Add to Cart
+          </button>
+        </div>
+
+        <!-- Pepperoni Pizza -->
+        <div class="pizza-item">
+          <img
+            src="img/Pepperoni Pizza.jpg"
+            alt="Pepperoni Pizza"
+            class="pizza-image"
+          />
+          <h3>Pepperoni Pizza</h3>
+          <p>Tomato sauce, mozzarella cheese, and pepperoni slices</p>
+          <label for="size-pepperoni">Choose Size:</label>
+          <select id="size-pepperoni">
+            <option value="12">Small - $12</option>
+            <option value="17">Medium - $17</option>
+            <option value="22">Large - $22</option>
+          </select>
+          <label for="extras-pepperoni">Choose Extras:</label>
+          <select id="extras-pepperoni">
+            <option value="2">Mushrooms - $2</option>
+            <option value="3">Extra Cheese - $3</option>
+            <option value="1">Olives - $1</option>
+          </select>
+          <button
+            onclick="addToCart('Pepperoni Pizza', 'size-pepperoni', 'extras-pepperoni')"
+          >
+            Add to Cart
+          </button>
+        </div>
+
+        <!-- Hawaiian Pizza -->
+        <div class="pizza-item">
+          <img
+            src="img/Hawaiian Pizza.jpg"
+            alt="Hawaiian Pizza"
+            class="pizza-image"
+          />
+          <h3>Hawaiian Pizza</h3>
+          <p>Tomato sauce, mozzarella cheese, ham, and pineapple</p>
+          <label for="size-hawaiian">Choose Size:</label>
+          <select id="size-hawaiian">
+            <option value="11">Small - $11</option>
+            <option value="16">Medium - $16</option>
+            <option value="21">Large - $21</option>
+          </select>
+          <label for="extras-hawaiian">Choose Extras:</label>
+          <select id="extras-hawaiian">
+            <option value="2">Bacon - $2</option>
+            <option value="3">Extra Cheese - $3</option>
+            <option value="1">Olives - $1</option>
+          </select>
+          <button
+            onclick="addToCart('Hawaiian Pizza', 'size-hawaiian', 'extras-hawaiian')"
+          >
+            Add to Cart
+          </button>
+        </div>
+
+        <!-- Quattro Formaggi (Four Cheese Pizza) -->
+        <div class="pizza-item">
+          <img
+            src="img/Quattro Formaggi (Four Cheese Pizza).jpg"
+            alt="Quattro Formaggi"
+            class="pizza-image"
+          />
+          <h3>Quattro Formaggi</h3>
+          <p>
+            A blend of four cheeses: mozzarella, gorgonzola, parmesan, and
+            ricotta
+          </p>
+          <label for="size-quattro">Choose Size:</label>
+          <select id="size-quattro">
+            <option value="13">Small - $13</option>
+            <option value="18">Medium - $18</option>
+            <option value="23">Large - $23</option>
+          </select>
+          <label for="extras-quattro">Choose Extras:</label>
+          <select id="extras-quattro">
+            <option value="2">Mushrooms - $2</option>
+            <option value="3">Spinach - $3</option>
+            <option value="1">Olives - $1</option>
+          </select>
+          <button
+            onclick="addToCart('Quattro Formaggi', 'size-quattro', 'extras-quattro')"
+          >
+            Add to Cart
+          </button>
+        </div>
+
+        <!-- Diavolo Pizza (Spicy Pizza) -->
+        <div class="pizza-item">
+          <img
+            src="img/Diavolo Pizza (Spicy Pizza).jpg"
+            alt="Diavolo Pizza"
+            class="pizza-image"
+          />
+          <h3>Diavolo Pizza</h3>
+          <p>
+            Spicy tomato sauce, mozzarella cheese, chili peppers, and spicy
+            sausage
+          </p>
+          <label for="size-diavolo">Choose Size:</label>
+          <select id="size-diavolo">
+            <option value="14">Small - $14</option>
+            <option value="19">Medium - $19</option>
+            <option value="24">Large - $24</option>
+          </select>
+          <label for="extras-diavolo">Choose Extras:</label>
+          <select id="extras-diavolo">
+            <option value="2">Jalapeños - $2</option>
+            <option value="3">Extra Cheese - $3</option>
+            <option value="1">Olives - $1</option>
+          </select>
+          <button
+            onclick="addToCart('Diavolo Pizza', 'size-diavolo', 'extras-diavolo')"
+          >
+            Add to Cart
+          </button>
+        </div>
+      </div>
+
+      <!-- Group 2-->
+      <div class="pizza-group">
+        <!-- Supreme Pizza -->
+        <div class="pizza-item">
+          <img
+            src="img/Supreme Pizza.jpg"
+            alt="Supreme Pizza"
+            class="pizza-image"
+          />
+          <h3>Supreme Pizza</h3>
+          <p>
+            Tomato sauce, mozzarella cheese, mushrooms, bell peppers, onions,
+            olives, and sausage
+          </p>
+          <label for="size-supreme">Choose Size:</label>
+          <select id="size-supreme">
+            <option value="15">Small - $15</option>
+            <option value="20">Medium - $20</option>
+            <option value="25">Large - $25</option>
+          </select>
+          <label for="extras-supreme">Choose Extras:</label>
+          <select id="extras-supreme">
+            <option value="2">Extra Cheese - $2</option>
+            <option value="3">Pepperoni - $3</option>
+            <option value="1">Olives - $1</option>
+          </select>
+          <button
+            onclick="addToCart('Supreme Pizza', 'size-supreme', 'extras-supreme')"
+          >
+            Add to Cart
+          </button>
+        </div>
+
+        <!-- Seafood Pizza -->
+        <div class="pizza-item">
+          <img
+            src="img/Seafood Pizza.jpg"
+            alt="Seafood Pizza"
+            class="pizza-image"
+          />
+          <h3>Seafood Pizza</h3>
+          <p>Tomato sauce, mozzarella cheese, shrimp, clams, and mussels</p>
+          <label for="size-seafood">Choose Size:</label>
+          <select id="size-seafood">
+            <option value="16">Small - $16</option>
+            <option value="21">Medium - $21</option>
+            <option value="26">Large - $26</option>
+          </select>
+          <label for="extras-seafood">Choose Extras:</label>
+          <select id="extras-seafood">
+            <option value="2">Garlic - $2</option>
+            <option value="3">Extra Cheese - $3</option>
+            <option value="1">Olives - $1</option>
+          </select>
+          <button
+            onclick="addToCart('Seafood Pizza', 'size-seafood', 'extras-seafood')"
+          >
+            Add to Cart
+          </button>
+        </div>
+
+        <!-- Vegetarian Pizza -->
+        <div class="pizza-item">
+          <img
+            src="img/Vegetarian Pizza.jpg"
+            alt="Vegetarian Pizza"
+            class="pizza-image"
+          />
+          <h3>Vegetarian Pizza</h3>
+          <p>
+            Tomato sauce, mozzarella cheese, mushrooms, bell peppers, onions,
+            tomatoes, and olives
+          </p>
+          <label for="size-vegetarian">Choose Size:</label>
+          <select id="size-vegetarian">
+            <option value="12">Small - $12</option>
+            <option value="17">Medium - $17</option>
+            <option value="22">Large - $22</option>
+          </select>
+          <label for="extras-vegetarian">Choose Extras:</label>
+          <select id="extras-vegetarian">
+            <option value="2">Spinach - $2</option>
+            <option value="3">Extra Cheese - $3</option>
+            <option value="1">Olives - $1</option>
+          </select>
+          <button
+            onclick="addToCart('Vegetarian Pizza', 'size-vegetarian', 'extras-vegetarian')"
+          >
+            Add to Cart
+          </button>
+        </div>
+
+        <!-- Carbonara Pizza -->
+        <div class="pizza-item">
+          <img
+            src="img/Carbonara Pizza.jpg"
+            alt="Carbonara Pizza"
+            class="pizza-image"
+          />
+          <h3>Carbonara Pizza</h3>
+          <p>Creamy sauce, parmesan cheese, bacon, and egg</p>
+          <label for="size-carbonara">Choose Size:</label>
+          <select id="size-carbonara">
+            <option value="14">Small - $14</option>
+            <option value="19">Medium - $19</option>
+            <option value="24">Large - $24</option>
+          </select>
+          <label for="extras-carbonara">Choose Extras:</label>
+          <select id="extras-carbonara">
+            <option value="2">Mushrooms - $2</option>
+            <option value="3">Extra Cheese - $3</option>
+            <option value="1">Olives - $1</option>
+          </select>
+          <button
+            onclick="addToCart('Carbonara Pizza', 'size-carbonara', 'extras-carbonara')"
+          >
+            Add to Cart
+          </button>
+        </div>
+
+        <!-- Truffle Pizza (Mushroom Pizza) -->
+        <div class="pizza-item">
+          <img
+            src="img/Truffle Pizza (Mushroom Pizza).jpg"
+            alt="Truffle Pizza"
+            class="pizza-image"
+          />
+          <h3>Truffle Pizza</h3>
+          <p>
+            Tomato or cream sauce, mozzarella cheese, and assorted mushrooms
+          </p>
+          <label for="size-truffle">Choose Size:</label>
+          <select id="size-truffle">
+            <option value="15">Small - $15</option>
+            <option value="20">Medium - $20</option>
+            <option value="25">Large - $25</option>
+          </select>
+          <label for="extras-truffle">Choose Extras:</label>
+          <select id="extras-truffle">
+            <option value="2">Truffle Oil - $2</option>
+            <option value="3">Extra Cheese - $3</option>
+            <option value="1">Olives - $1</option>
+          </select>
+          <button
+            onclick="addToCart('Truffle Pizza', 'size-truffle', 'extras-truffle')"
+          >
+            Add to Cart
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Cart -->
+    <section id="cart" class="page">
+      <h2>Shopping Cart</h2>
+      <ul id="cart-items"></ul>
+      <p>Total: $<span id="total">0</span></p>
+    </section>
+
+    <!-- Order -->
+    <section id="order" class="page">
+      <div class="order-container">
+        <form id="order-form">
+          <h2>Order</h2>
+
+          <div class="form-group">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required />
+          </div>
+
+
+          <div class="form-group">
+            <label for="email">Email:</label>
+            <input type="email" id="email" required />
+          </div>
+
+
+          <div class="form-group">
+            <label for="phone">Phone:</label>
+            <input type="tel" id="phone" name="phone" required />
+          </div>
+
+
+          <div class="form-group">
+            <label for="address">Address:</label>
+            <input type="text" id="address" required />
+          </div>
+
+          <div class="form-group">
+            <button type="submit">Place Order</button>
+          </div>
+        </form>
+      </div>
+    </section>
+
+    <footer>
+      <p>&copy; 2025 Pizza Restaurant | info@pizzarestaurant.com</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3.2.0/dist/email.min.js"></script>
+    <script src="scripts.js"></script>
+  </body>
+</html>
