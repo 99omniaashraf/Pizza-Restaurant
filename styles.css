@@ -126,8 +126,8 @@ nav ul li a i {
     margin-bottom: 10px;
 }
 
-.sauce-item h3,
-.juice-item h3,
+.sauce-item h4,
+.juice-item h4,
 .pizza-item h3 {
     font-size: 1.5rem;
     margin-bottom: 10px;
@@ -175,6 +175,14 @@ nav ul li a i {
 .juice-item button:hover,
 .pizza-item button:hover {
     background-color: #feb47b;
+}
+
+.sauces-group h3,
+.juices-group h3 {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 2rem;
+    color: #333;
 }
 
 /* Sauces and Juices Section
