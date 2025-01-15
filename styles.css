@@ -185,6 +185,86 @@ nav ul li a i {
     color: #333;
 }
 
+/* Sauces and Juices Section */
+.sauces-group,
+.juices-group {
+  text-align: center; 
+  margin-top: 30px;
+}
+
+.sauces-group h3,
+.juices-group h3 {
+  font-size: 2rem; 
+  margin-bottom: 20px; 
+  color: #333;
+}
+
+.sauces-group .sauce-items-container,
+.juices-group .juice-items-container {
+  display: flex; 
+  justify-content: center; 
+  gap: 20px; 
+  flex-wrap: wrap; 
+}
+
+.sauce-item,
+.juice-item {
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 15px;
+  background-color: white;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  width: 200px; 
+}
+
+.sauce-item:hover,
+.juice-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.sauce-image,
+.juice-image {
+  width: 100%;
+  height: 150px; 
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+.sauce-item h4,
+.juice-item h4 {
+  font-size: 1.2rem; 
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.sauce-item p,
+.juice-item p {
+  font-size: 1rem; 
+  color: #666;
+  margin-bottom: 15px;
+}
+
+.sauce-item button,
+.juice-item button {
+  padding: 10px 20px;
+  background-color: #ff7e5f;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
+}
+
+.sauce-item button:hover,
+.juice-item button:hover {
+  background-color: #feb47b;
+}
+
 /* Sauces and Juices Section
 .sauces-group,
 .juices-group {
