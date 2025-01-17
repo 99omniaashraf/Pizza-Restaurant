@@ -73,6 +73,23 @@ nav ul li a i {
     font-size: 1.5rem; 
 }
 
+/* About */
+.about-content {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .about-image img {
+    max-width: 100%;
+    height: auto;
+    margin-right: 20px;
+  }
+  
+  .about-text {
+    flex: 1;
+  }
+
 /* Menu Section Styles */
 #menu {
     padding: 20px;
