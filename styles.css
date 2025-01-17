@@ -505,6 +505,7 @@ nav ul li a i {
   }
   
   .form-group input {
+    justify-content: flex;
     width: 90%;
     padding: 10px;
     border: 1px solid #ddd;
