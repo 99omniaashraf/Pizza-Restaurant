@@ -505,11 +505,12 @@ nav ul li a i {
   }
   
   .form-group input {
+    position: center;
     width: 100%;
     padding: 10px;
     border: 1px solid #ddd;
     border-radius: 5px;
-    font-size: 0.5rem;
+    font-size: 1rem;
     transition: border-color 0.3s ease;
   }
   
