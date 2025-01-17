@@ -505,8 +505,7 @@ nav ul li a i {
   }
   
   .form-group input {
-    position: center;
-    width: 100%;
+    width: 90%;
     padding: 10px;
     border: 1px solid #ddd;
     border-radius: 5px;
@@ -520,7 +519,7 @@ nav ul li a i {
   }
   
   .form-group button {
-    width: 100%;
+    width: 90%;
     padding: 10px;
     background-color: #ff7e5f;
     color: white;
