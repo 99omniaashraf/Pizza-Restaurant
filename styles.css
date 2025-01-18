@@ -465,35 +465,98 @@ nav ul li a i {
     background-color: #feb47b;
   } */
 
-/* تنسيق الـ div التي تحتوي على الـ total */
-.cart-items-container {
+
+/* .cart-items-container {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  margin-bottom: 20px; /* مسافة بين الـ div التي تحتوي على total والـ div التي تحتوي على الصورة */
+  margin-bottom: 20px; 
 }
 
-/* تنسيق الـ div التي تحتوي على الصورة */
 .discount-container {
   display: flex;
   align-items: center;
-  margin-top: 20px; /* مسافة بين الـ div التي تحتوي على الصورة والـ div التي تحتوي على total */
+  margin-top: 20px; 
 }
 
-/* تنسيق الصورة داخل الـ discount-container */
+
 .discount-image {
-  width: 50px; /* تغيير حجم الصورة حسب الحاجة */
+  width: 50px; 
   height: auto;
-  margin-right: 10px; /* مسافة بين الصورة والنص */
+  margin-right: 10px; 
 }
 
-/* تنسيق النص داخل الـ discount-container */
 .discount-container p {
   margin: 0;
   font-size: 16px;
   color: #333;
+} */
+
+.cart-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
+.cart-items-container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.cart-items-container ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.cart-items-container p {
+  font-size: 18px;
+  font-weight: bold;
+  color: #333;
+}
+
+.discount-container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.discount-image {
+  width: 50px;
+  height: auto;
+  border-radius: 8px;
+}
+
+.discount-container p {
+  margin: 0;
+  font-size: 16px;
+  color: #555;
+}
+
+.discount-container strong {
+  color: #e74c3c;
+}
+
+.page {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+h2 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 20px;
+}
 
 /* Order Section */
 #order {
