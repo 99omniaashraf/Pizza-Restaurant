@@ -389,7 +389,7 @@ nav ul li a i {
 } */
 
 /* Cart Section */
-#cart {
+/* #cart {
     padding: 20px;
     background-color: #f9f9f9;
   }
@@ -463,7 +463,36 @@ nav ul li a i {
   
   #cart-items button:hover {
     background-color: #feb47b;
-  }
+  } */
+
+/* تنسيق الـ div التي تحتوي على الـ total */
+.cart-items-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-bottom: 20px; /* مسافة بين الـ div التي تحتوي على total والـ div التي تحتوي على الصورة */
+}
+
+/* تنسيق الـ div التي تحتوي على الصورة */
+.discount-container {
+  display: flex;
+  align-items: center;
+  margin-top: 20px; /* مسافة بين الـ div التي تحتوي على الصورة والـ div التي تحتوي على total */
+}
+
+/* تنسيق الصورة داخل الـ discount-container */
+.discount-image {
+  width: 50px; /* تغيير حجم الصورة حسب الحاجة */
+  height: auto;
+  margin-right: 10px; /* مسافة بين الصورة والنص */
+}
+
+/* تنسيق النص داخل الـ discount-container */
+.discount-container p {
+  margin: 0;
+  font-size: 16px;
+  color: #333;
+}
 
 
 /* Order Section */
@@ -506,7 +535,7 @@ nav ul li a i {
   
   .form-group input {
     justify-content: flex;
-    width: 90%;
+    width: 100%;
     padding: 10px;
     border: 1px solid #ddd;
     border-radius: 5px;
@@ -520,7 +549,8 @@ nav ul li a i {
   }
   
   .form-group button {
-    width: 90%;
+    justify-content: center;
+    width: 100%;
     padding: 10px;
     background-color: #ff7e5f;
     color: white;
